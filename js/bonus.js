@@ -1,16 +1,16 @@
 //Bonus 1
 
 //Echanger le bloc 1 et le bloc 2
-// let mainElement = document.querySelector("main");
+let mainElement = document.querySelector("main");
 
-// let divsInMain = mainElement.getElementsByTagName("div");
+let divsInMain = mainElement.querySelectorAll(":scope > div");
 
-// let secondDiv = divsInMain[1];
-// let thirdDiv = divsInMain[2];
+let secondDiv = divsInMain[2];
+let thirdDiv = divsInMain[4];
+let tmp = secondDiv.innerHTML;
 
-// if (secondDiv && thirdDiv) {
-//   mainElement.insertBefore(thirdDiv, secondDiv);
-// }
+secondDiv.innerHTML = thirdDiv.innerHTML;
+thirdDiv.innerHTML = tmp;
 
 //Bonus 2
 
