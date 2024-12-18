@@ -1,3 +1,8 @@
+// Feedback
+// 1. Priviligé les querySelector
+// 2. Vérification des éléments avant de les implémenter
+// 3. Utilisation de insertAdjacentHTML ou insertBefore
+
 //// Basic changes
 //Logo
 const webSiteImage = document.getElementsByTagName("img")[0]
@@ -6,13 +11,15 @@ webSiteImage.src =
 webSiteImage.style.width = "fit-content"
 
 //Title Text
-document.getElementsByTagName("h1")[1].innerHTML =
+const titleElement = document.getElementsByTagName("h1")[1]
+titleElement.innerHTML =
   "Generate<span style='color : #0ea5e9;'> more revenue </span>with your website!"
 
 //Description Text
+const textElement = document.getElementsByTagName("p")[0]
 const descriptionText =
   "97% of your trafic does not convert. Webyn automatically generates improvements on your website to maximise your conversions. \n100% No-Code."
-document.getElementsByTagName("p")[0].innerText = descriptionText
+textElement.innerText = descriptionText
 
 //Buttons
 const leftButton = document.getElementsByTagName("button")[4]
